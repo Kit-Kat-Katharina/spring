@@ -9,17 +9,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cydeo</groupId>
-    <artifactId>Sping-006-SpringBoot-Demo</artifactId>
+    <artifactId>Spring-007-MVC-Controller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Sping-006-SpringBoot-Demo</name>
-    <description>Sping-006-SpringBoot-Demo</description>
+    <name>Spring-007-MVC-Controller</name>
+    <description>Spring-007-MVC-Controller</description>
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -27,13 +27,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.28</version>
-        </dependency>
-
-
     </dependencies>
 
     <build>

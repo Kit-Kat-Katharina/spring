@@ -1,0 +1,30 @@
+<table>
+    <thead>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${mentors.get(0).firstName}"></td>
+        <td th:text="${mentors.get(0).lastName}"></td>
+        <td th:text="${mentors.get(0).age}"></td>
+        <td th:text="${mentors.get(0).gender.val}"></td>
+    </tr>
+    <tr>
+        <td th:text="${mentors.get(1).firstName}"></td>
+        <td th:text="${mentors.get(1).lastName}"></td>
+        <td th:text="${mentors.get(1).age}"></td>
+        <td th:text="${mentors.get(1).gender.val}"></td>
+    </tr>
+    <tr>
+        <td th:text="${mentors.get(2).firstName}"></td>
+        <td th:text="${mentors.get(2).lastName}"></td>
+        <td th:text="${mentors.get(2).age}"></td>
+        <td th:text="${mentors.get(2).gender.val}"></td>
+    </tr>
+    </tbody>
+</table>
