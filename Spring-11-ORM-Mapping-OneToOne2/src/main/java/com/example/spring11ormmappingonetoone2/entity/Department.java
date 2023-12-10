@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class Department extends BaseEntity {
     private String department;
     private String division;
-    @OneToOne(mappedBy = "department")//what kind of relationship we want to set up 1 employee to 1 department
+    @OneToOne(mappedBy = "department")//what kind of relationship we want to set up 1 employee to 1 department - CREATE DEPARTMENT IN EMPLOYEE
     private Employee employee;
 
     public Department(String department, String division) {

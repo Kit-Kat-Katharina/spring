@@ -24,7 +24,9 @@ public class Employee extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private Gender gender;
     private int salary;
-   // private int regionId;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="region_id")
+    private Region region;
    @OneToOne(cascade = CascadeType.ALL)//we did join
   // @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
    @JoinColumn(name = "department_id")//name of the join(extra) column
