@@ -20,6 +20,7 @@ public interface DepartmentRepository extends JpaRepository<Department, Long> {
     List<Department> findDistinctTop3ByDivisionContains(String division);
 
     //JPQL query
+    //positional parameters
     @Query("SELECT d FROM Department d WHERE d.division IN ?1")
     List<Department>getDepartmentDivision(List<String> division);
 }
