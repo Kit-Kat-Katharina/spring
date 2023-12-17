@@ -5,12 +5,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 public class MovieCinema extends BaseEntity {
     @Column(columnDefinition = "TIMESTAMP")
@@ -19,4 +22,11 @@ public class MovieCinema extends BaseEntity {
     private Movie movie;
     @ManyToOne(fetch = FetchType.LAZY)
     private Cinema cinema;
+
+    @Override
+    public String toString() {
+        return "MovieCinema{" +
+                "dateTime=" + dateTime +
+                '}';
+    }
 }
